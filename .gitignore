@@ -1,0 +1,76 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+*.pem
+
+# Local env files - never commit real secrets
+.env
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Generated native folders
+/ios
+/android
+
+# Supabase CLI temp files
+supabase/.temp/
+
+# Cursor IDE
+.cursor/
+
+# UI validator outputs (screenshots + cache)
+.claude/ui-e2e-reports/
+
+# Local harness/IDE personal settings
+.claude/settings.local.json
+.claude/settings.json
+
+# Test fixtures and screenshots (may contain PII)
+test_case/*.pdf
+test_case/*.png
+test_case/verify-screens/
+test_case/e2e-tabbar/
+
+# Local credentials, signing material and machine settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+google-play-key.json
+*service-account*.json
+.claude/settings.local.json
