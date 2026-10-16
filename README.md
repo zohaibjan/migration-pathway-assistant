@@ -11,7 +11,7 @@ It focuses on guided eligibility signals, likely gaps, document checklists, and 
 Two assessment paths sit side-by-side so the app stays useful even without a network or an account:
 
 - **Guided assessment (offline)** - a plain-English questionnaire that runs through a deterministic ranking engine. Works without any account or network.
-- **AI Assistant (Supabase + OpenAI)** - paste a paragraph about your situation and/or upload PDF / image / text documents. The mobile app uploads documents into your private Supabase Storage folder and calls the `analyze-migration` Edge Function, which extracts text, asks the LLM, and returns a ranked plain-English summary. Sign-in is required for this tab; the LLM API key never leaves the Edge Function.
+- **AI Assistant (Supabase + OpenAI)** - paste a paragraph about your situation and/or upload PDF / image / text documents. The mobile app uploads documents into your private Supabase Storage folder and calls the `analyze-migration` Edge Function, which extracts supported text/PDF content, asks the LLM, and returns a ranked plain-English summary. Image OCR is not implemented; images are flagged for a text description. Sign-in is required for this tab; the LLM API key never leaves the Edge Function.
 
 ## App flow
 
